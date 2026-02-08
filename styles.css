@@ -14,7 +14,7 @@ body{
   background: #f4f6fb;
 }
 
-/* ===== Jump Menu (left, full height) ===== */
+/*  Jump Menu (left, full height) */
 #jumpMenu{
   position: fixed;
   top: 0;
@@ -50,14 +50,14 @@ body{
   background: rgba(255,255,255,0.12);
 }
 
-/* ===== Main area (right of jump menu) ===== */
+/*  Main area (right of jump menu)  */
 main{
   margin-left: var(--menu-width);
   padding: calc(var(--header-height) + 20px) 24px 40px 24px;
   min-height: 100vh;
 }
 
-/* ===== Header (fixed top, centered within main area) ===== */
+/* Header (fixed top, centered within main area)  */
 #topHeader{
   position: fixed;
   top: 0;
@@ -109,7 +109,7 @@ main > h1{
   font-size: 28px;
 }
 
-/* ===== Article layout (reflows on resize) ===== */
+/*  Article layout (reflows on resize) */
 #container{
   display: grid;
   grid-template-columns: repeat(auto-fit, var(--card-width));
@@ -146,7 +146,7 @@ main > h1{
   text-decoration: underline;
 }
 
-/* ===== Fixed bottom-right thank-you block ===== */
+/* Fixed bottomright thank you block  */
 #thanks{
   position: fixed;
   right: 18px;
