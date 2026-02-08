@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Positioning - MyBlog</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Jump Menu (fixed left, full height) -->
+  <aside id="jumpMenu">
+    <h2>Jump Menu</h2>
+    <nav>
+      <a href="#a1">Article 1</a>
+      <a href="#a2">Article 2</a>
+      <a href="#a3">Article 3</a>
+      <a href="#a4">Article 4</a>
+      <a href="#a5">Article 5</a>
+      <a href="#a6">Article 6</a>
+      <a href="#a7">Article 7</a>
+      <a href="#a8">Article 8</a>
+    </nav>
+  </aside>
+
+  <!-- Main content area (to the right of jump menu) -->
+  <main>
+
+    <!-- Header (fixed top, centered within the main area, not behind jump menu) -->
+    <header id="topHeader">
+      <p class="brand">MyBlog.com</p>
+      <nav class="headerNav">
+        <button type="button">Home</button>
+        <button type="button">Articles</button>
+        <button type="button">About</button>
+        <button type="button">Contact</button>
+      </nav>
+    </header>
+
+    <h1>Journal Articles</h1>
+
+    <!-- Cards/grid container -->
+    <section id="container">
+
+      <article id="a1">
+        <h2>Article 1</h2>
+        <p>
+          This is a sample journal entry. The layout is designed to reorganize when the window resizes.
+        </p>
+        <a href="#">Read more</a>
+      </article>
+
+      <article id="a2">
+        <h2>Article 2</h2>
+        <p>
+          Each article has a fixed width card so they line up neatly and wrap automatically.
+        </p>
+        <a href="#">Read more</a>
+      </article>
+
+      <article id="a3">
+        <h2>Article 3</h2>
+        <p>
+          The header stays fixed at the top, and the jump menu stays fixed on the left.
+        </p>
+        <a href="#">Read more</a>
+      </article>
+
+      <article id="a4">
+        <h2>Article 4</h2>
+        <p>
+          Scroll down to confirm the header does not move and the layout remains clean.
+        </p>
+        <a href="#">Read more</a>
+      </article>
+
+      <article id="a5">
+        <h2>Article 5</h2>
+        <p>
+          The “Thank you for visiting” block stays in the bottom-right corner at all times.
+        </p>
+        <a href="#">Read more</a>
+      </article>
+
+      <article id="a6">
+        <h2>Article 6</h2>
+        <p>
+          Resize the browser window to see articles reorganize into more/less columns automatically.
+        </p>
+        <a href="#">Read more</a>
+      </article>
+
+      <article id="a7">
+        <h2>Article 7</h2>
+        <p>
+          This setup uses CSS Grid with auto-fit and a fixed card width.
+        </p>
+        <a href="#">Read more</a>
+      </article>
+
+      <article id="a8">
+        <h2>Article 8</h2>
+        <p>
+          You can add more articles and they will keep flowing neatly without extra work.
+        </p>
+        <a href="#">Read more</a>
+      </article>
+
+    </section>
+
+    <footer>
+      <p>Footer</p>
+      <address>
+        MyBlog.com — Somewhere, Earth
+      </address>
+    </footer>
+
+  </main>
+
+  <!-- Fixed bottom-right block -->
+  <p id="thanks">Thank you for visiting!</p>
+
+</body>
+</html>
